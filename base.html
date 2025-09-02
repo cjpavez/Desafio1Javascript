@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <section>
         <div class="card">
             <div class="img-card"></div>
@@ -25,21 +24,25 @@
                     cuenta = cuenta + 1
                     parrafo.innerHTML = cuenta
                     numb1 = cuenta
-                    ">+</button>
+                    numb2 = 400000
+                    valorTotal = numb1*numb2
+                    " id="btnSuma">+</button>
                     <button onclick="
                     parrafo = document.querySelector('.cantidad')   
                     cuenta = Number(parrafo.innerHTML)
                     cuenta = cuenta - 1
                     parrafo.innerHTML = cuenta
-                    numb1 = cuenta   
-                    ">-</button>
+                    numb1 = cuenta
+                    numb2 = 400000
+                    valorTotal = numb1*numb2   
+                    " id="btnResta">-</button>
                 </p>
             </div>
         </div>
     </section>
 
     <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total"></span> </p>
+        <p>Total a pagar: $<span id="valor-total"></span> </p>
     </div>
 
     <script src="./assets/JS/index.js"></script>
